@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Image Gallery</h1>
+        <a href="admin.html" class="admin-button" style="display: none;">Admin Panel</a>
+        <button id="logout-button" class="logout-button" style="display: none;">Logout</button>
+        <button id="login-as-admin-button" class="login-as-admin-button" style="display: none;">Login as Admin</button>
+        <div id="user-info">
+            <p id="username">Not logged in</p>
+        </div>
+    </header>
+
+    <!-- Swiper Container -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper" id="swiper-wrapper">
+            <!-- Slides will be added here dynamically -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery-section" id="gallery-section">
+        <!-- Gallery items will be added here dynamically -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="JS/mousemove.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
